@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+/*  html {
+    @apply text-white
+  }*/
+
+  button {
+    @apply px-3 py-1.5 rounded-md
+  }
+  input{
+    @apply w-full block p-2 border-2 focus:border-black rounded-md focus:outline-none
+  }
+
+  select{
+    @apply w-full block p-2 border-2 focus:border-black rounded-md focus:outline-none
+  }
+
+  label{
+    @apply text-sm text-gray-700 font-semibold
+  }
+
+  form{
+    @apply space-y-4
+  }
+}
+
+@layer components {
+  .google-sign-in-btn {
+    @apply bg-white border shadow-xl font-semibold text-gray-500
+  }
+
+  .sign-out{
+    @apply bg-white
+  }
+
+  .btn-black{
+    @apply bg-black text-white
+  }
+
+  .new-item{
+      @apply flex gap-2 bg-white text-black p-5 border hover:shadow-white/40 hover:shadow-2xl
+  }
+
+  .diagram-card{
+    @apply w-1/2 h-40 flex justify-center items-center bg-white rounded-md text-black text-xl p-5 border hover:shadow-white/40 hover:shadow-2xl
+  }
+
+  .node-table{
+    @apply w-full h-full min-w-40 min-h-20  flex flex-col border text-gray-700 border-black bg-white
+  }
+
+  .node-table-body {
+    @apply grow relative overflow-hidden border-t border-black px-1
+  }
+
+  .node-table-head {
+    @apply text-center text-gray-700 border-b w-full
+  }
+
+  .node-target {
+    @apply border-dashed border-blue-700
+  }
+
+  .node-source {
+    @apply border-black
+  }
+
+  div.custom-edge-point {
+    @apply opacity-0 w-full h-full rounded-none
+  }
+}
+
+@layer utilities {
+
+}
