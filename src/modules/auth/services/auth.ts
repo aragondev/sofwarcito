@@ -19,3 +19,25 @@ export function isAuthenticated(){
 
     return !!currentUser;
 }
+
+//get name of current user
+export function getCurrentUser(){
+    let currentUser=null;
+    onAuthStateChanged(auth, (user) => {
+        currentUser=user
+    });
+
+    return currentUser;
+}
+
+// //get name of current user
+// export function getCurrentUserName() {
+//     let currentUser=null;
+//     onAuthStateChanged(auth, (user) => {
+//         currentUser=user
+//     });
+
+// }
+
+
+
